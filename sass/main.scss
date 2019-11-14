@@ -1,0 +1,1432 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fff !important;
+}
+
+.header {
+    width: 100%;
+    height: 40px;
+    background: #666;
+    .nav {
+        width: 1228px;
+        margin: 0 auto;
+        .nav-left {
+            ul>li {
+                float: left;
+                list-style: none;
+            }
+            ul>.li1>a {
+                margin-left: 0;
+            }
+            a {
+                line-height: 40px;
+                color: #ccc;
+                text-decoration: none;
+                font-size: 11px;
+                margin-left: 43px;
+                &:hover {
+                    color: #fff;
+                }
+            }
+        }
+        .nav-right {
+            ul {
+                float: right;
+                .li2 {
+                    position: relative;
+                    &:hover>div {
+                        display: block;
+                    }
+                    div {
+                        position: absolute;
+                        width: 180px;
+                        height: 200px;
+                        border: 1px solid #ccc;
+                        left: -30px;
+                        background: #fff;
+                        display: none;
+                        z-index: 333;
+                        img {
+                            width: 140px;
+                            height: 140px;
+                            margin-top: 10px;
+                            position: relative;
+                            left: 20px;
+                        }
+                        >p {
+                            text-align: center;
+                            >a {
+                                font-size: 10px;
+                                line-height: 160%;
+                                text-decoration: none;
+                                color: #000;
+                            }
+                        }
+                    }
+                }
+                >li {
+                    float: left;
+                    list-style: none;
+                    >a {
+                        color: #ccc;
+                        font-size: 11px;
+                        line-height: 40px;
+                        text-decoration: none;
+                        padding-left: 15px;
+                        &:hover {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 第二个导航
+.nav-tab {
+    width: 100%;
+    height: 80px;
+    background: #fff;
+    >.central {
+        width: 1270px;
+        height: 80px;
+        margin: 0 auto;
+        // overflow: hidden;
+        .cen-t {
+            width: 1270px;
+            height: 46.6px;
+            // line-height: 80px;
+            margin-top: 16.7px;
+            .log>img {
+                height: 66.6px;
+                display: block;
+                width: 75.2px;
+                margin-top: -10px;
+                position: absolute !important;
+            }
+            .nav-bp {
+                width: 584.6px;
+                height: 40px;
+                line-height: 46.6px;
+                top: 3px;
+                left: 75.2px;
+                position: relative;
+                >ul {
+                    position: relative;
+                    float: right;
+                    >li {
+                        // width: 61.8px;
+                        height: 40px;
+                        list-style: none;
+                        float: left;
+                        padding: 0 14px;
+                        >a {
+                            color: #555555;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.cen-t {
+    .nav-lp {
+        >ul {
+            float: right;
+            position: relative;
+            >li {
+                float: left;
+                list-style: none;
+                line-height: 46.6px;
+                padding: 0 10px;
+                // position: absolute;
+                >a {
+                    color: #555555;
+                    font-size: 14px;
+                    text-decoration: none;
+                }
+                input {
+                    width: 233px;
+                    height: 34px;
+                    padding: 0 5px;
+                    box-sizing: border-box
+                }
+                .sear {
+                    background-color: #e4e4e4;
+                    width: 28px;
+                    height: 28px;
+                    display: block;
+                    text-align: center;
+                    line-height: 28px;
+                    border-radius: 50%;
+                    position: relative;
+                    left: 195px;
+                    top: -35px;
+                    font-family: iconfont-tcl!important;
+                }
+            }
+        }
+    }
+}
+
+.kon:hover>.erji>ul {
+    height: 220px;
+    display: block;
+}
+
+.dian:hover>.san>ul {
+    height: 220px;
+    display: block;
+}
+
+.bing:hover>.si>ul {
+    height: 220px;
+    display: block;
+}
+
+.xi:hover>.wu>ul {
+    height: 220px;
+    display: block;
+}
+
+.zhi:hover>.qi>ul {
+    height: 220px;
+    display: block;
+}
+
+.jian:hover>.liu>ul {
+    height: 220px;
+    display: block;
+}
+
+.nav-bp {
+    li {
+        position: relative;
+        .erji {
+            position: absolute;
+            // overflow: hidden;
+            >ul {
+                background: #fff;
+                width: 1519.2px;
+                transition: all 0.4s;
+                height: 0;
+                left: -364px;
+                top: 14px;
+                display: none;
+                position: absolute;
+                z-index: 789;
+                overflow: hidden;
+                display: block;
+                // overflow: hidden;
+                >li:nth-child(1) {
+                    margin-left: 0;
+                }
+                >li {
+                    float: left;
+                    width: 200px;
+                    height: 220px;
+                    position: relative;
+                    left: 220px;
+                    margin: 0 8px;
+                    >img {
+                        width: 100px;
+                        height: 100px;
+                        margin-left: 50px;
+                        margin-top: 20px;
+                    }
+                    >p {
+                        text-align: center;
+                        // height: 50px !important;
+                        line-height: 15px;
+                        >a {
+                            font-size: 11px;
+                        }
+                    }
+                    span {
+                        text-align: center;
+                        display: block;
+                        a {
+                            color: red;
+                            font-size: 11px;
+                            line-height: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 电视
+.nav-bp {
+    li {
+        position: relative;
+        .san {
+            position: absolute;
+            // overflow: hidden;
+            >ul {
+                background: #fff;
+                width: 1519.2px;
+                transition: all 0.4s;
+                height: 0;
+                left: -424px;
+                top: 14px;
+                display: none;
+                position: absolute;
+                z-index: 789;
+                overflow: hidden;
+                display: block;
+                // overflow: hidden;
+                >li:nth-child(1) {
+                    margin-left: 0;
+                }
+                >li {
+                    float: left;
+                    width: 200px;
+                    height: 220px;
+                    position: relative;
+                    left: 220px;
+                    margin: 0 8px;
+                    >img {
+                        width: 100px;
+                        height: 100px;
+                        margin-left: 50px;
+                        margin-top: 20px;
+                    }
+                    >p {
+                        text-align: center;
+                        // height: 50px !important;
+                        line-height: 15px;
+                        >a {
+                            font-size: 11px;
+                        }
+                    }
+                    span {
+                        text-align: center;
+                        display: block;
+                        a {
+                            color: red;
+                            font-size: 11px;
+                            line-height: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 冰箱
+.nav-bp {
+    li {
+        position: relative;
+        .si {
+            position: absolute;
+            // overflow: hidden;
+            >ul {
+                background: #fff;
+                width: 1519.2px;
+                transition: all 0.4s;
+                height: 0;
+                left: -484px;
+                top: 14px;
+                display: none;
+                position: absolute;
+                z-index: 789;
+                overflow: hidden;
+                display: block;
+                // overflow: hidden;
+                >li:nth-child(1) {
+                    margin-left: 0;
+                }
+                >li {
+                    float: left;
+                    width: 200px;
+                    height: 220px;
+                    position: relative;
+                    left: 220px;
+                    margin: 0 8px;
+                    >img {
+                        width: 100px;
+                        height: 100px;
+                        margin-left: 50px;
+                        margin-top: 20px;
+                    }
+                    >p {
+                        text-align: center;
+                        // height: 50px !important;
+                        line-height: 15px;
+                        >a {
+                            font-size: 11px;
+                        }
+                    }
+                    span {
+                        text-align: center;
+                        display: block;
+                        a {
+                            color: red;
+                            font-size: 11px;
+                            line-height: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 洗衣机
+.nav-bp {
+    li {
+        position: relative;
+        .wu {
+            position: absolute;
+            // overflow: hidden;
+            >ul {
+                background: #fff;
+                width: 1519.2px;
+                transition: all 0.4s;
+                height: 0;
+                left: -544px;
+                top: 14px;
+                display: none;
+                position: absolute;
+                z-index: 789;
+                overflow: hidden;
+                display: block;
+                // overflow: hidden;
+                >li:nth-child(1) {
+                    margin-left: 0;
+                }
+                >li {
+                    float: left;
+                    width: 200px;
+                    height: 220px;
+                    position: relative;
+                    left: 220px;
+                    margin: 0 8px;
+                    >img {
+                        width: 100px;
+                        height: 100px;
+                        margin-left: 50px;
+                        margin-top: 20px;
+                    }
+                    >p {
+                        text-align: center;
+                        // height: 50px !important;
+                        line-height: 15px;
+                        >a {
+                            font-size: 11px;
+                        }
+                    }
+                    span {
+                        text-align: center;
+                        display: block;
+                        a {
+                            color: red;
+                            font-size: 11px;
+                            line-height: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 健康电器
+.nav-bp {
+    li {
+        position: relative;
+        .liu {
+            position: absolute;
+            // overflow: hidden;
+            >ul {
+                background: #fff;
+                width: 1519.2px;
+                transition: all 0.4s;
+                height: 0;
+                left: -620px;
+                top: 14px;
+                display: none;
+                position: absolute;
+                z-index: 789;
+                overflow: hidden;
+                display: block;
+                // overflow: hidden;
+                >li:nth-child(1) {
+                    margin-left: 0;
+                }
+                >li {
+                    float: left;
+                    width: 200px;
+                    height: 220px;
+                    position: relative;
+                    left: 220px;
+                    margin: 0 8px;
+                    >img {
+                        width: 100px;
+                        height: 100px;
+                        margin-left: 50px;
+                        margin-top: 20px;
+                    }
+                    >p {
+                        text-align: center;
+                        // height: 50px !important;
+                        line-height: 15px;
+                        >a {
+                            font-size: 11px;
+                        }
+                    }
+                    span {
+                        text-align: center;
+                        display: block;
+                        a {
+                            color: red;
+                            font-size: 11px;
+                            line-height: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 智能硬件
+.nav-bp {
+    li {
+        position: relative;
+        .qi {
+            position: absolute;
+            // overflow: hidden;
+            >ul {
+                background: #fff;
+                width: 1519.2px;
+                transition: all 0.4s;
+                height: 0;
+                left: -712px;
+                top: 14px;
+                display: none;
+                position: absolute;
+                z-index: 789;
+                overflow: hidden;
+                display: block;
+                // overflow: hidden;
+                >li:nth-child(1) {
+                    margin-left: 0;
+                }
+                >li {
+                    float: left;
+                    width: 200px;
+                    height: 220px;
+                    position: relative;
+                    left: 220px;
+                    margin: 0 8px;
+                    >img {
+                        width: 100px;
+                        height: 100px;
+                        margin-left: 50px;
+                        margin-top: 20px;
+                    }
+                    >p {
+                        text-align: center;
+                        // height: 50px !important;
+                        line-height: 15px;
+                        >a {
+                            font-size: 11px;
+                        }
+                    }
+                    span {
+                        text-align: center;
+                        display: block;
+                        a {
+                            color: red;
+                            font-size: 11px;
+                            line-height: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.pro {
+    width: 1228px;
+    height: 220px;
+    margin: 0 auto;
+    // background: palegoldenrod;
+    // display: block;
+    font-size: 0;
+    // position: absolute;
+    margin: 34px auto 49px;
+    .proimg {
+        margin: 0 14px;
+    }
+}
+
+// 电视
+#tv {
+    width: 1228px;
+    height: 680.8px;
+    margin: 0 auto;
+    margin-bottom: 45px;
+    // background: palegoldenrod;
+    >.tv-header {
+        width: 1228px;
+        height: 28.8px;
+        margin: 0 0 24px;
+        // background: paleturquoise;
+        position: relative;
+        >#more {
+            position: absolute;
+            right: 0;
+            >a {
+                color: red;
+                font-size: 12px !important;
+            }
+        }
+        h2 {
+            font-size: 22px;
+            font-weight: 400;
+            border-left: 4px solid #fe0000;
+            padding-left: 15px;
+            margin-right: 36px;
+            display: inline-block;
+        }
+        >ul {
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 12px;
+            position: absolute;
+            >li {
+                float: left;
+                margin-right: 16px;
+                line-height: 28.8px;
+                a {
+                    line-height: 28.8px;
+                    font-size: 14px;
+                    &:hover {
+                        color: red;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// tv-left
+.tv-section {
+    width: 1228px;
+    height: 628px;
+    // margin-bottom: 45px !important;
+    // background: peachpuff;
+    >.tv-left {
+        width: 296px;
+        height: 615px;
+        float: left;
+        // background: powderblue;
+    }
+}
+
+// tv-right
+.tv-right {
+    width: 931px;
+    height: 628px;
+    // background: pink;
+    float: right;
+    ul {
+        .item {
+            width: 296px;
+            height: 300px;
+            margin: 0 0 14px 14px;
+            background: #fff;
+            position: relative;
+            transition: all .2s ease-in;
+            float: left;
+            list-style: none;
+            &:hover {
+                box-shadow: 0px 0px 7px 7px #cecdcd;
+                transform: translate(0px, -10px);
+            }
+            .hot-img {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+            a>.p-pic {
+                text-align: center;
+                font-size: 14px;
+            }
+            a>.p-title {
+                text-align: center;
+                font-size: 14px;
+            }
+            a>.p-dice {
+                font-size: 12px;
+                color: #9b9b9b;
+                margin: 12px auto 0;
+                height: 30px;
+                line-height: 15px;
+                overflow: hidden;
+                width: 237px;
+                text-align: center;
+            }
+            a>.p-price {
+                text-align: center;
+                color: red;
+                margin: 10px 0px 0px;
+                .yuan {
+                    color: red;
+                }
+            }
+        }
+    }
+}
+
+// 空调
+#cond {
+    width: 1228px;
+    height: 680.8px;
+    margin: 0 auto;
+    margin-bottom: 45px;
+    // background: palegoldenrod;
+    >.cond-header {
+        width: 1228px;
+        height: 28.8px;
+        margin: 0 0 24px;
+        // background: paleturquoise;
+        position: relative;
+        >#more {
+            position: absolute;
+            right: 0;
+            >a {
+                color: red;
+                font-size: 12px !important;
+            }
+        }
+        h2 {
+            font-size: 22px;
+            font-weight: 400;
+            border-left: 4px solid #fe0000;
+            padding-left: 15px;
+            margin-right: 36px;
+            display: inline-block;
+        }
+        >ul {
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 12px;
+            position: absolute;
+            >li {
+                float: left;
+                margin-right: 16px;
+                line-height: 28.8px;
+                a {
+                    line-height: 28.8px;
+                    font-size: 14px;
+                    &:hover {
+                        color: red;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// cond-left
+.cond-section {
+    width: 1228px;
+    height: 628px;
+    // margin-bottom: 45px !important;
+    // background: peachpuff;
+    >.cond-left {
+        width: 296px;
+        height: 615px;
+        float: left;
+        // background: powderblue;
+    }
+}
+
+// cond-right
+.cond-right {
+    width: 931px;
+    height: 628px;
+    // background: pink;
+    float: right;
+    ul {
+        .item {
+            width: 296px;
+            height: 300px;
+            margin: 0 0 14px 14px;
+            background: #fff;
+            position: relative;
+            transition: all .2s ease-in;
+            float: left;
+            list-style: none;
+            &:hover {
+                box-shadow: 0px 0px 7px 7px #cecdcd;
+                transform: translate(0px, -10px);
+            }
+            .hot-img {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+            a>.p-pic {
+                text-align: center;
+                font-size: 14px;
+                img {
+                    width: 180px;
+                    height: 180px;
+                    display: block;
+                    margin: 0 auto;
+                }
+            }
+            a>.p-title {
+                text-align: center;
+                font-size: 14px;
+            }
+            a>.p-dice {
+                font-size: 12px;
+                color: #9b9b9b;
+                margin: 12px auto 0;
+                height: 30px;
+                line-height: 15px;
+                overflow: hidden;
+                width: 237px;
+                text-align: center;
+            }
+            a>.p-price {
+                text-align: center;
+                color: red;
+                margin: 10px 0px 0px;
+                .yuan {
+                    color: red;
+                }
+            }
+        }
+    }
+}
+
+// 冰箱
+#ice {
+    width: 1228px;
+    height: 680.8px;
+    margin: 0 auto;
+    margin-bottom: 45px;
+    // background: palegoldenrod;
+    >.ice-header {
+        width: 1228px;
+        height: 28.8px;
+        margin: 0 0 24px;
+        // background: paleturquoise;
+        position: relative;
+        >#more {
+            position: absolute;
+            right: 0;
+            >a {
+                color: red;
+                font-size: 12px !important;
+            }
+        }
+        h2 {
+            font-size: 22px;
+            font-weight: 400;
+            border-left: 4px solid #fe0000;
+            padding-left: 15px;
+            margin-right: 36px;
+            display: inline-block;
+        }
+        >ul {
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 12px;
+            position: absolute;
+            >li {
+                float: left;
+                margin-right: 16px;
+                line-height: 28.8px;
+                a {
+                    line-height: 28.8px;
+                    font-size: 14px;
+                    &:hover {
+                        color: red;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// ice-left
+.ice-section {
+    width: 1228px;
+    height: 628px;
+    // margin-bottom: 45px !important;
+    // background: peachpuff;
+    >.ice-left {
+        width: 296px;
+        height: 615px;
+        float: left;
+        // background: powderblue;
+    }
+}
+
+// ice-right
+.ice-right {
+    width: 931px;
+    height: 628px;
+    // background: pink;
+    float: right;
+    ul {
+        .item {
+            width: 296px;
+            height: 300px;
+            margin: 0 0 14px 14px;
+            background: #fff;
+            position: relative;
+            transition: all .2s ease-in;
+            float: left;
+            list-style: none;
+            &:hover {
+                box-shadow: 0px 0px 7px 7px #cecdcd;
+                transform: translate(0px, -10px);
+            }
+            .hot-img {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+            a>.p-pic {
+                text-align: center;
+                font-size: 14px;
+                img {
+                    width: 180px;
+                    height: 180px;
+                    display: block;
+                    margin: 0 auto;
+                }
+            }
+            a>.p-title {
+                text-align: center;
+                font-size: 14px;
+            }
+            a>.p-dice {
+                font-size: 12px;
+                color: #9b9b9b;
+                margin: 12px auto 0;
+                height: 30px;
+                line-height: 15px;
+                overflow: hidden;
+                width: 237px;
+                text-align: center;
+            }
+            a>.p-price {
+                text-align: center;
+                color: red;
+                margin: 10px 0px 0px;
+                .yuan {
+                    color: red;
+                }
+            }
+        }
+    }
+}
+
+// 洗衣机
+#wash {
+    width: 1228px;
+    height: 680.8px;
+    margin: 0 auto;
+    margin-bottom: 45px;
+    // background: palegoldenrod;
+    >.wash-header {
+        width: 1228px;
+        height: 28.8px;
+        margin: 0 0 24px;
+        // background: paleturquoise;
+        position: relative;
+        >#more {
+            position: absolute;
+            right: 0;
+            >a {
+                color: red;
+                font-size: 12px !important;
+            }
+        }
+        h2 {
+            font-size: 22px;
+            font-weight: 400;
+            border-left: 4px solid #fe0000;
+            padding-left: 15px;
+            margin-right: 36px;
+            display: inline-block;
+        }
+        >ul {
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 12px;
+            position: absolute;
+            >li {
+                float: left;
+                margin-right: 16px;
+                line-height: 28.8px;
+                a {
+                    line-height: 28.8px;
+                    font-size: 14px;
+                    &:hover {
+                        color: red;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// wash-left
+.wash-section {
+    width: 1228px;
+    height: 628px;
+    // margin-bottom: 45px !important;
+    // background: peachpuff;
+    >.wash-left {
+        width: 296px;
+        height: 615px;
+        float: left;
+        // background: powderblue;
+    }
+}
+
+// wash-right
+.wash-right {
+    width: 931px;
+    height: 628px;
+    // background: pink;
+    float: right;
+    ul {
+        .item {
+            width: 296px;
+            height: 300px;
+            margin: 0 0 14px 14px;
+            background: #fff;
+            position: relative;
+            transition: all .2s ease-in;
+            float: left;
+            list-style: none;
+            &:hover {
+                box-shadow: 0px 0px 7px 7px #cecdcd;
+                transform: translate(0px, -10px);
+            }
+            .hot-img {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+            a>.p-pic {
+                text-align: center;
+                font-size: 14px;
+                img {
+                    width: 180px;
+                    height: 180px;
+                    display: block;
+                    margin: 0 auto;
+                }
+            }
+            a>.p-title {
+                text-align: center;
+                font-size: 14px;
+            }
+            a>.p-dice {
+                font-size: 12px;
+                color: #9b9b9b;
+                margin: 12px auto 0;
+                height: 30px;
+                line-height: 15px;
+                overflow: hidden;
+                width: 237px;
+                text-align: center;
+            }
+            a>.p-price {
+                text-align: center;
+                color: red;
+                margin: 10px 0px 0px;
+                .yuan {
+                    color: red;
+                }
+            }
+        }
+    }
+}
+
+// 厨房电器
+#kitchen {
+    width: 1228px;
+    height: 680.8px;
+    margin: 0 auto;
+    margin-bottom: 45px;
+    // background: palegoldenrod;
+    >.kitchen-header {
+        width: 1228px;
+        height: 28.8px;
+        margin: 0 0 24px;
+        // background: paleturquoise;
+        position: relative;
+        >#more {
+            position: absolute;
+            right: 0;
+            >a {
+                color: red;
+                font-size: 12px !important;
+            }
+        }
+        h2 {
+            font-size: 22px;
+            font-weight: 400;
+            border-left: 4px solid #fe0000;
+            padding-left: 15px;
+            margin-right: 36px;
+            display: inline-block;
+        }
+        >ul {
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 12px;
+            position: absolute;
+            >li {
+                float: left;
+                margin-right: 16px;
+                line-height: 28.8px;
+                a {
+                    line-height: 28.8px;
+                    font-size: 14px;
+                    &:hover {
+                        color: red;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// kitchen-left
+.kitchen-section {
+    width: 1228px;
+    height: 628px;
+    // margin-bottom: 45px !important;
+    // background: peachpuff;
+    >.kitchen-left {
+        width: 296px;
+        height: 615px;
+        float: left;
+        // background: powderblue;
+    }
+}
+
+// kitchen-right
+.kitchen-right {
+    width: 931px;
+    height: 628px;
+    // background: pink;
+    float: right;
+    ul {
+        .item {
+            width: 296px;
+            height: 300px;
+            margin: 0 0 14px 14px;
+            background: #fff;
+            position: relative;
+            transition: all .2s ease-in;
+            float: left;
+            list-style: none;
+            &:hover {
+                box-shadow: 0px 0px 7px 7px #cecdcd;
+                transform: translate(0px, -10px);
+            }
+            .hot-img {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+            a>.p-pic {
+                text-align: center;
+                font-size: 14px;
+                img {
+                    width: 180px;
+                    height: 180px;
+                    display: block;
+                    margin: 0 auto;
+                }
+            }
+            a>.p-title {
+                text-align: center;
+                font-size: 14px;
+            }
+            a>.p-dice {
+                font-size: 12px;
+                color: #9b9b9b;
+                margin: 12px auto 0;
+                height: 30px;
+                line-height: 15px;
+                overflow: hidden;
+                width: 237px;
+                text-align: center;
+            }
+            a>.p-price {
+                text-align: center;
+                color: red;
+                margin: 10px 0px 0px;
+                .yuan {
+                    color: red;
+                }
+            }
+        }
+    }
+}
+
+// 智能配件
+#parts {
+    width: 1228px;
+    height: 680.8px;
+    margin: 0 auto;
+    margin-bottom: 45px;
+    // background: palegoldenrod;
+    >.parts-header {
+        width: 1228px;
+        height: 28.8px;
+        margin: 0 0 24px;
+        // background: paleturquoise;
+        position: relative;
+        >#more {
+            position: absolute;
+            right: 0;
+            >a {
+                color: red;
+                font-size: 12px !important;
+            }
+        }
+        h2 {
+            font-size: 22px;
+            font-weight: 400;
+            border-left: 4px solid #fe0000;
+            padding-left: 15px;
+            margin-right: 36px;
+            display: inline-block;
+        }
+        >ul {
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 12px;
+            position: absolute;
+            >li {
+                float: left;
+                margin-right: 16px;
+                line-height: 28.8px;
+                a {
+                    line-height: 28.8px;
+                    font-size: 14px;
+                    &:hover {
+                        color: red;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// parts-left
+.parts-section {
+    width: 1228px;
+    height: 628px;
+    // margin-bottom: 45px !important;
+    // background: peachpuff;
+    >.parts-left {
+        width: 296px;
+        height: 615px;
+        float: left;
+        // background: powderblue;
+    }
+}
+
+// parts-right
+.parts-right {
+    width: 931px;
+    height: 628px;
+    // background: pink;
+    float: right;
+    ul {
+        .item {
+            width: 296px;
+            height: 300px;
+            margin: 0 0 14px 14px;
+            background: #fff;
+            position: relative;
+            transition: all .2s ease-in;
+            float: left;
+            list-style: none;
+            &:hover {
+                box-shadow: 0px 0px 7px 7px #cecdcd;
+                transform: translate(0px, -10px);
+            }
+            .hot-img {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+            a>.p-pic {
+                text-align: center;
+                font-size: 14px;
+                img {
+                    width: 180px;
+                    height: 180px;
+                    display: block;
+                    margin: 0 auto;
+                }
+            }
+            a>.p-title {
+                text-align: center;
+                font-size: 14px;
+            }
+            a>.p-dice {
+                font-size: 12px;
+                color: #9b9b9b;
+                margin: 12px auto 0;
+                height: 30px;
+                line-height: 15px;
+                overflow: hidden;
+                width: 237px;
+                text-align: center;
+            }
+            a>.p-price {
+                text-align: center;
+                color: red;
+                margin: 10px 0px 0px;
+                .yuan {
+                    color: red;
+                }
+            }
+        }
+    }
+}
+
+// 中尾部 
+.fans {
+    width: 1226px;
+    height: 423.6px;
+    margin: 0 auto;
+    >ul {
+        list-style: none;
+        li:nth-child(4) {
+            margin-right: 0;
+        }
+        li {
+            width: 296px;
+            height: 413.6px;
+            margin: 0 14px 10px 0;
+            float: left;
+            a>img {
+                float: left;
+            }
+            .fant-box {
+                width: 296px;
+                height: 187.6px;
+                // text-align: center;
+                background: #f3f3f3;
+                padding: 36px 33px;
+                float: left;
+                a {
+                    color: #666666;
+                    font-size: 12px;
+                }
+                >.fant-dice {
+                    font-size: 12px;
+                    line-height: 14px;
+                    height: 42px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    margin-bottom: 18px;
+                    color: #666666;
+                }
+                >.fant-title {
+                    font-size: 14px;
+                    height: 24px;
+                    line-height: 24px;
+                    overflow: hidden;
+                    color: #333;
+                    margin-bottom: 10px;
+                    >span {
+                        font-size: 12px;
+                        padding: 0 10px;
+                        margin-right: 8px;
+                        display: inline-block;
+                        text-align: center;
+                        background-color: #4b89f1;
+                        vertical-align: top;
+                        color: #FFF;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.more {
+    width: 1226px;
+    height: 16px;
+    margin-top: 30px !important;
+    margin: 0 auto;
+    padding-bottom: 70px;
+    a {
+        text-align: center;
+        font-size: 12px;
+        color: #666666;
+        display: block;
+    }
+}
+
+// 帮助中心
+.help {
+    width: 100%;
+    height: 126.6px;
+    background: palegreen;
+    >.panner {
+        width: 1226px;
+        height: 100%;
+        background: cornsilk;
+        margin: 0 auto;
+        ul {
+            list-style: none;
+            >li:nth-child(2) {
+                padding: 43px 66px 43px 0;
+            }
+            >li:nth-child(1) {
+                width: 306.5px;
+                height: 125.6px;
+                background: cyan;
+                line-height: 125.6px;
+                float: left;
+                >span {
+                    width: 40px;
+                    font-size: 35px;
+                    color: #666;
+                    margin-bottom: 10px;
+                }
+                >em {
+                    font-size: 14px;
+                    color: #666;
+                    font-style: normal;
+                    vertical-align: top;
+                }
+            }
+        }
+    }
+}
