@@ -1302,12 +1302,12 @@ body {
   line-height: 28.8px;
 }
 
-#parts > .parts-header > ul > li a {
+#parts > .parts-header > ul > li > a {
   line-height: 28.8px;
   font-size: 14px;
 }
 
-#parts > .parts-header > ul > li a:hover {
+#parts > .parts-header > ul > li > a:hover {
   color: red;
 }
 
@@ -1350,24 +1350,24 @@ body {
   top: 0;
 }
 
-.parts-right ul .item a > .p-pic {
+.parts-right ul .item > a > .p-pic {
   text-align: center;
   font-size: 14px;
 }
 
-.parts-right ul .item a > .p-pic img {
+.parts-right ul .item > a > .p-pic img {
   width: 180px;
   height: 180px;
   display: block;
   margin: 0 auto;
 }
 
-.parts-right ul .item a > .p-title {
+.parts-right ul .item > a > .p-title {
   text-align: center;
   font-size: 14px;
 }
 
-.parts-right ul .item a > .p-dice {
+.parts-right ul .item > a > .p-dice {
   font-size: 12px;
   color: #9b9b9b;
   margin: 12px auto 0;
@@ -1378,13 +1378,13 @@ body {
   text-align: center;
 }
 
-.parts-right ul .item a > .p-price {
+.parts-right ul .item > a > .p-price {
   text-align: center;
   color: red;
   margin: 10px 0px 0px;
 }
 
-.parts-right ul .item a > .p-price .yuan {
+.parts-right ul .item > a > .p-price .yuan {
   color: red;
 }
 
@@ -1409,7 +1409,7 @@ body {
   float: left;
 }
 
-.fans > ul li a > img {
+.fans > ul li > a > img {
   float: left;
 }
 
@@ -1421,7 +1421,7 @@ body {
   float: left;
 }
 
-.fans > ul li .fant-box a {
+.fans > ul li .fant-box > a {
   color: #666666;
   font-size: 12px;
 }
@@ -1464,7 +1464,7 @@ body {
   padding-bottom: 70px;
 }
 
-.more a {
+.more > a {
   text-align: center;
   font-size: 12px;
   color: #666666;
@@ -1474,14 +1474,14 @@ body {
 .help {
   width: 100%;
   height: 126.6px;
-  background: palegreen;
+  background: #f3f3f3;
 }
 
 .help > .panner {
   width: 1226px;
   height: 100%;
-  background: cornsilk;
   margin: 0 auto;
+  border-bottom: 1px solid #afafaf;
 }
 
 .help > .panner ul {
@@ -1489,27 +1489,215 @@ body {
 }
 
 .help > .panner ul > li:nth-child(2) {
-  padding: 43px 66px 43px 0;
+  padding-left: 70px;
 }
 
-.help > .panner ul > li:nth-child(1) {
+.help > .panner ul > li:nth-child(3) {
+  padding-left: 130px;
+}
+
+.help > .panner ul > li:nth-child(4) {
+  padding-left: 170px;
+}
+
+.help > .panner ul > li {
   width: 306.5px;
   height: 125.6px;
-  background: cyan;
-  line-height: 125.6px;
+  background: #f3f3f3;
+  line-height: 125.6px !important;
   float: left;
 }
 
-.help > .panner ul > li:nth-child(1) > span {
+.help > .panner ul > li > span {
   width: 40px;
   font-size: 35px;
   color: #666;
   margin-bottom: 10px;
 }
 
-.help > .panner ul > li:nth-child(1) > em {
+.help > .panner ul > li > em {
   font-size: 14px;
   color: #666;
   font-style: normal;
   vertical-align: top;
+}
+
+.sect {
+  width: 100%;
+  height: auto;
+  background: #f3f3f3;
+}
+
+.sect .sect-panner {
+  height: 242.6px;
+  width: 1226px;
+  margin: 0 auto;
+  padding: 40px 0 41px;
+  position: relative;
+}
+
+.sect .sect-panner .last-r {
+  width: 172px;
+  position: absolute;
+  top: 37px;
+  right: 0;
+  text-align: center;
+  margin-right: 0;
+}
+
+.sect .sect-panner .last-r .lp {
+  font-size: 20px;
+  color: red;
+  letter-spacing: 2px;
+  margin-right: 9px;
+}
+
+.sect .sect-panner .last-r .op {
+  font-size: 12px;
+  color: #999;
+  margin-bottom: 20px;
+  margin-right: 9px;
+}
+
+.sect .sect-panner .last-r .hover {
+  width: 160px;
+  height: 30px;
+  border: 1px solid red;
+}
+
+.sect .sect-panner .last-r .hover a {
+  font-size: 12px;
+  line-height: 30px;
+  color: red;
+}
+
+.sect .sect-panner .last-r .hover:hover {
+  background: red;
+}
+
+.sect .sect-panner .last-r .hover:hover a {
+  color: #fff;
+}
+
+.sect .sect-panner > dl {
+  float: left;
+  margin-right: 112px;
+}
+
+.sect .sect-panner > dl > div img {
+  width: 120px;
+  height: 120px;
+  display: block;
+}
+
+.sect .sect-panner > dl > dt {
+  font-size: 14px;
+  line-height: 14px;
+  padding-bottom: 20px;
+  color: #333;
+  font-weight: 700;
+}
+
+.sect .sect-panner > dl dd {
+  display: block;
+  line-height: 12px;
+}
+
+.sect .sect-panner > dl dd > a {
+  color: #999;
+  outline: 0;
+  display: inline-block;
+  padding-bottom: 12px;
+  font-size: 12px;
+}
+
+.sect .sect-panner > dl dd > a:hover {
+  color: #666;
+  text-decoration: underline;
+}
+
+.end {
+  width: 100%;
+  height: 146.8px;
+  background: #e3e3e3;
+  padding: 25px 0;
+}
+
+.end .end-panner {
+  width: 1226px;
+  height: auto;
+  line-height: 22px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.end .end-panner .language {
+  position: absolute;
+  right: 0;
+  font-size: 12px;
+  color: #666;
+  top: 17px;
+}
+
+.end .end-panner .language a {
+  padding: 0 12px;
+  font-size: 12px;
+  color: #666;
+}
+
+.end .end-panner .free {
+  text-align: center;
+}
+
+.end .end-panner .free span:nth-child(1) img {
+  width: 86.06px;
+  height: 32px;
+}
+
+.end .end-panner .free span:nth-child(2) img {
+  width: 93.6px;
+  height: 32px;
+}
+
+.end .end-panner .three a {
+  font-size: 12px;
+  color: #666;
+}
+
+.end .end-panner .three a > img {
+  width: 16px;
+  height: 16px;
+  position: relative;
+  top: 3px;
+}
+
+.end .end-panner .two {
+  font-size: 12px;
+  color: #666;
+}
+
+.end .end-panner .two a {
+  font-size: 12px;
+  color: #666;
+  vertical-align: middle;
+}
+
+.end .end-panner .two a:nth-child(1) {
+  padding-left: 10px;
+  vertical-align: middle;
+}
+
+.end .end-panner .one {
+  font-size: 12px;
+  color: #666;
+}
+
+.end .end-panner .one a {
+  padding: 0 15px;
+  font-size: 12px;
+  color: #666;
+}
+
+.end .end-panner .one a:nth-child(1) {
+  padding-left: 0;
 }
