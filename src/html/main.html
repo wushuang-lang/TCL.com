@@ -7,11 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="../style/main.css">
+    <!-- <script data-main="../js/main.index" src="../js/require.js"></script> -->
+    <script src="../js/require-command.js" data-main="../js/main.index.js"></script>
 
     <link rel="stylesheet" href="../style/font-logo/foot.css">
     <link rel="stylesheet" href="../style/csss.css" />
     <link rel="stylesheet" href="../style/font-logo/iconfont.css">
     <link rel="stylesheet" href="../style/font_ssai20ydz7/iconfont.css">
+    <link rel="stylesheet" href="../style/font_8u6wvq7mp09/iconfont.css">
 </head>
 
 <body>
@@ -43,9 +46,9 @@
                     <li><a href="">|</a></li>
                     <li><a href="">购物车( 0 )</a></li>
                     <li><a href="">|</a></li>
-                    <li><a href="">注册</a></li>
+                    <li><a href="zhuce.html">注册</a></li>
                     <li><a href="">|</a></li>
-                    <li><a href="">登录</a></li>
+                    <li><a href="deblu.html">登录</a></li>
                 </ul>
             </div>
 
@@ -612,25 +615,25 @@
             <div class="menu-contern" id="menu-contern">
                 <div class="menu-item">
                     <a href="">
-                        <span>客启系类</span>
+                        <span>空调爆款</span>
                         <i class="icon">></i>
                     </a>
                 </div>
                 <div class="menu-item">
                     <a href="">
-                        <span>平板电视</span>
+                        <span>热销电视</span>
                         <i class="icon">></i>
                     </a>
                 </div>
                 <div class="menu-item">
                     <a href="">
-                        <span>空调产品</span>
+                        <span>人气冰箱</span>
                         <i class="icon">></i>
                     </a>
                 </div>
                 <div class="menu-item">
                     <a href="">
-                        <span>冰洗产品</span>
+                        <span>品质洗衣机</span>
                         <i class="icon">></i>
                     </a>
                 </div>
@@ -642,13 +645,13 @@
                 </div>
                 <div class="menu-item">
                     <a href="">
-                        <span>冰洗产品</span>
+                        <span>浮窗电视</span>
                         <i class="icon">></i>
                     </a>
                 </div>
                 <div class="menu-item">
                     <a href="">
-                        <span>冰洗产品</span>
+                        <span>配件周边</span>
                         <i class="icon">></i>
                     </a>
                 </div>
@@ -726,45 +729,45 @@
                         </li> -->
                     </ul>
                     <script src="../js/jquery.js"></script>
-                    <script>
+                    <!-- <script>
                         $(function() {
-                            $.ajax({
-                                type: "get",
-                                url: "../lib/main.php",
-                                dataType: "json",
-                                success: function(data) {
-                                    let temp = '';
-                                    data.forEach((elem, i) => {
-                                        let pic = JSON.parse(elem.pic);
-                                        temp += ` <li class="item">
-                                             <img class="hot-img" src="..${pic[0].src}" alt="">
-                                             <a href="product.html?id=${elem.id}">
-                                         <div class="p-pic">
-                                            <img src="..${pic[1].src}" alt="">
-                                         </div>
-                                        <div class="p-title">
-                                            ${elem.title}
-                                        </div>
-                                        <div class="p-dice">
-                                       ${elem.dice}
-                                        </div>
-                                        <div class="p-price">
-                                        ${elem.num}元
-                                        </div>
-                            </a>
-                        </li>
-                                        `;
-                                    });
-                                    $('.list').append(temp)
-                                }
-                            });
+                                $.ajax({
+                                    type: "get",
+                                    url: "../lib/main.php",
+                                    dataType: "json",
+                                    success: function(data) {
+                                        let temp = '';
+                                        data.forEach((elem, i) => {
+                                            let pic = JSON.parse(elem.pic);
+                                            temp += ` <li class="item">
+                                                 <img class="hot-img" src="..${pic[0].src}" alt="">
+                                                 <a href="product.html?id=${elem.id}">
+                                             <div class="p-pic">
+                                                <img src="..${pic[1].src}" alt="">
+                                             </div>
+                                            <div class="p-title">
+                                                ${elem.title}
+                                            </div>
+                                            <div class="p-dice">
+                                           ${elem.dice}
+                                            </div>
+                                            <div class="p-price">
+                                            ${elem.num}元
+                                            </div>
+                                </a>
+                            </li>
+                                            `;
+                                        });
+                                        $('.list').append(temp)
+                                    }
+                                });
                         })
-                    </script>
+                    </script> -->
                 </div>
             </div>
         </div>
         <!-- 空调 -->
-        <div class="dond" id="cond" title="cond">
+        <div class="cond" id="cond" title="cond">
             <div class="cond-header">
                 <h2>空调</h2>
                 <ul>
@@ -786,7 +789,7 @@
 
                     </ul>
 
-                    <script>
+                    <!-- <script>
                         $(function() {
                             $.ajax({
                                 type: "get",
@@ -819,7 +822,7 @@
                                 }
                             });
                         })
-                    </script>
+                    </script> -->
                 </div>
             </div>
         </div>
@@ -848,7 +851,7 @@
 
                     </ul>
 
-                    <script>
+                    <!-- <script>
                         $(function() {
                             $.ajax({
                                 type: "get",
@@ -881,7 +884,7 @@
                                 }
                             });
                         })
-                    </script>
+                    </script> -->
                 </div>
             </div>
         </div>
@@ -908,7 +911,7 @@
 
                     </ul>
 
-                    <script>
+                    <!-- <script>
                         $(function() {
                             $.ajax({
                                 type: "get",
@@ -941,7 +944,7 @@
                                 }
                             });
                         })
-                    </script>
+                    </script> -->
                 </div>
             </div>
         </div>
@@ -970,7 +973,7 @@
 
                     </ul>
 
-                    <script>
+                    <!-- <script>
                         $(function() {
                             $.ajax({
                                 type: "get",
@@ -1003,7 +1006,7 @@
                                 }
                             });
                         })
-                    </script>
+                    </script> -->
                 </div>
             </div>
         </div>
@@ -1030,7 +1033,7 @@
                     <ul class="lisaa">
 
                     </ul>
-
+                    <!-- 
                     <script>
                         $(function() {
                             $.ajax({
@@ -1064,7 +1067,7 @@
                                 }
                             });
                         })
-                    </script>
+                    </script> -->
                 </div>
             </div>
         </div>
@@ -1193,8 +1196,8 @@
                 </dl>
                 <dl class="last-r">
                     <p class="lp">4008-123456</p>
-                    <p class="op">（24小时在线，仅收市话费）</p>
-                    <div class="hover">
+                    <p class="op ">（24小时在线，仅收市话费）</p>
+                    <div class="hover iconfont icon-kefu">
                         <a href="">24小时在线客服</a>
                     </div>
                 </dl>
@@ -1221,8 +1224,8 @@
                     <a href=""><img src="../images/end.png" alt="">粤网公安备案44133002100088号</a>
                 </p>
                 <div class="free">
-                    <span>  <img src="./images/end1.png" alt=""></span>
-                    <span> <img src="./images/end2.png" alt=""></span>
+                    <span>  <img src="../images/end1.png" alt=""></span>
+                    <span> <img src="../images/end2.png" alt=""></span>
                 </div>
                 <div class="language">
                     <a href="">中文简体</a>|
@@ -1231,7 +1234,128 @@
                 </div>
             </div>
         </div>
+        <!-- 阶梯 -->
+        <div class="float-nav">
+            <ul>
+                <li title="tv">
+                    <a class="active" href="javascript:;">电视</a>
+                </li>
+                <li title="cond">
+                    <a href="javascript:;">空调</a>
+                </li>
+                <li title="ice">
+                    <a href="javascript:;">冰箱</a>
+                </li>
+                <li title="wash">
+                    <a href="javascript:;">洗衣机</a>
+                </li>
+                <li title="kitchen">
+                    <a href="javascript:;">厨房电器</a>
+                </li>
+                <li title="parts">
+                    <a href="javascript:;">智能配件</a>
+                </li>
+            </ul>
 
+        </div>
+        <div class="gotop">
+            <a href="javascript:;">
+                <div class="iconfont icon-kefu"></div>
+                <div>客服</div>
+            </a>
+            <a href="javascript:;" class="gotop-t">
+                <div class="iconfont icon-huidaodingbu"></div>
+                <div>顶部</div>
+            </a>
+
+        </div>
+        <script>
+            $(function() {
+                // if ($(window).offsetHeight() >= 4100) {
+                //     $('.float-nav').each(function(i, elm) {
+                //         elm.style = 'display:none'
+                //     })
+                // }
+
+                $('.float-nav').each(function(i, elm) {
+                    elm.style = 'display:none'
+                })
+
+                $('.float-nav>ul>li').on('click', function() {
+                    var top = $('#' + $(this).attr('title')).offset().top;
+                    $('html,body').animate({
+                        scrollTop: top
+                    }, 600)
+
+                });
+                $('.gotop>.gotop-t').on('click', function() {
+                    $('html,body').animate({
+                        scrollTop: 0
+                    }, 600)
+                })
+                $(window).on('scroll', function() {
+                    var top = $(document).scrollTop();
+                    var i = 0;
+                    if (top >= 4820) {
+                        i = 6;
+
+                        $('.float-nav').each(function(i, elm) {
+                            elm.style = 'display:none'
+                        })
+                    } else if (top >= 4100) {
+                        i = 5;
+                        $('.float-nav').each(function(i, elm) {
+                            elm.style = 'display:block'
+                        })
+                    } else if (top >= 3380) {
+                        i = 4;
+                        $('.float-nav').each(function(i, elm) {
+                            elm.style = 'display:block'
+                        })
+                    } else if (top >= 2680) {
+                        i = 3;
+                        $('.float-nav').each(function(i, elm) {
+                            elm.style = 'display:block'
+                        })
+                    } else if (top >= 1960) {
+                        i = 2;
+                        $('.float-nav').each(function(i, elm) {
+                            elm.style = 'display:block'
+                        })
+                    } else if (top >= 1240) {
+                        i = 1;
+                        $('.float-nav').each(function(i, elm) {
+                            elm.style = 'display:block'
+                        })
+
+                    } else if (top >= 700) {
+
+                        $('.float-nav').each(function(i, elm) {
+                            elm.style = 'display:block'
+                        })
+
+                    } else if (top <= 700) {
+
+                        $('.float-nav').each(function(i, elm) {
+                            elm.style = 'display:none'
+                        })
+
+                    }
+                    //  else if (top >= 5500) {
+                    //     i = 7;
+                    //     $('.float-nav').each(function(i, elm) {
+                    //         elm.style = 'display:none';
+                    //     });
+                    // };
+
+                    // $('.float-nav').each(function(i, elm) {
+                    //         elm.style = 'display:none'
+                    //     })
+                    $('.float-nav>ul>li>a').removeClass('active');
+                    $('.float-nav>ul>li>a:eq(' + i + ')').addClass('active')
+                })
+            })
+        </script>
 
         <script src="../js/jsss.js"></script>
 

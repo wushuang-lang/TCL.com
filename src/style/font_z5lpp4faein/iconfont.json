@@ -1,0 +1,72 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "446589",
+      "name": "全国联保",
+      "font_class": "quanguolianbao",
+      "unicode": "e617",
+      "unicode_decimal": 58903
+    },
+    {
+      "icon_id": "617448",
+      "name": "特点_全场包邮",
+      "font_class": "tedianquanchangbaoyou",
+      "unicode": "e681",
+      "unicode_decimal": 59009
+    },
+    {
+      "icon_id": "691112",
+      "name": "回到顶部",
+      "font_class": "huidaodingbu",
+      "unicode": "e631",
+      "unicode_decimal": 58929
+    },
+    {
+      "icon_id": "721184",
+      "name": "授权正品",
+      "font_class": "shouquanzhengpin",
+      "unicode": "e698",
+      "unicode_decimal": 59032
+    },
+    {
+      "icon_id": "798090",
+      "name": "手机号",
+      "font_class": "shoujihao",
+      "unicode": "e642",
+      "unicode_decimal": 58946
+    },
+    {
+      "icon_id": "838048",
+      "name": "7天无理由退货",
+      "font_class": "7tianwuliyoutuihuo",
+      "unicode": "e60e",
+      "unicode_decimal": 58894
+    },
+    {
+      "icon_id": "7484859",
+      "name": "图片验证码",
+      "font_class": "tupianyanzhengma",
+      "unicode": "e61c",
+      "unicode_decimal": 58908
+    },
+    {
+      "icon_id": "8348125",
+      "name": "客服",
+      "font_class": "kefu",
+      "unicode": "e71c",
+      "unicode_decimal": 59164
+    },
+    {
+      "icon_id": "8765140",
+      "name": "用户名",
+      "font_class": "yonghuming",
+      "unicode": "e627",
+      "unicode_decimal": 58919
+    }
+  ]
+}
