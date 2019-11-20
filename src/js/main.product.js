@@ -9,9 +9,10 @@ require.config({
 
 
 require(['jquery', 'product'], function($, product) {
-    product.render(function(id, price) { // 渲染页面
+    product.render(function(id, num) { // 渲染页面
         $('.add').on('click', function() {
-            product.addItem(id, price, $('.num').val());
+
+            product.addItem(id, num, $('.number').val());
         });
     });
 });

@@ -1,6 +1,7 @@
 define(['jquery', 'md5'], function($, md5) {
     return {
         denluEv: function() {
+
             $('.btn').on('click', function() {
 
 
@@ -14,13 +15,20 @@ define(['jquery', 'md5'], function($, md5) {
 
                     success: function(res) {
                         // console.log(res)
-                        $('.result').html(JSON.parse(res).msg)
+                        $('.result').html(JSON.parse(res).msg);
+                        // var t = $('.result').html(JSON.parse(res).msg);
+                        if (JSON.parse(res).msg == '登录成功') {
+                            setTimeout(function() {
+                                location.href = "../html/main.html"
+                            }, 1000)
+                        } else if (JSON.parse(res).msg == '用户名或密码不正确') {
+
+                            setTimeout(function() {
+                                location.reload();
+                            }, 1000)
+                        }
                     }
                 });
-
-
-
-
             });
 
         }

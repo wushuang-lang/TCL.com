@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="../style/font-logo/iconfont.css">
     <link rel="stylesheet" href="../style/font_ssai20ydz7/iconfont.css">
     <link rel="stylesheet" href="../style/font_8u6wvq7mp09/iconfont.css">
+
 </head>
 
 <body>
@@ -44,7 +45,7 @@
 
                     </li>
                     <li><a href="">|</a></li>
-                    <li><a href="">购物车( 0 )</a></li>
+                    <li><a href="shopcar.html">购物车( 0 )</a></li>
                     <li><a href="">|</a></li>
                     <li><a href="zhuce.html">注册</a></li>
                     <li><a href="">|</a></li>
@@ -686,9 +687,9 @@
         </div>
         <!-- 中部图片 -->
         <div class="pro">
-            <img src="../images/propety-1.jpg" alt="">
-            <img src="../images/propety-2.jpg" alt="" class="proimg">
-            <img src="../images/propety-3.jpg" alt="">
+            <img class="lazy" data-original="../images/propety-1.jpg" alt="">
+            <img class="lazy proimg" data-original="../images/propety-2.jpg" alt="" class="proimg">
+            <img class="lazy" data-original="../images/propety-3.jpg" alt="">
         </div>
 
         <!-- 电视 -->
@@ -705,7 +706,7 @@
             <div class="tv-section">
                 <!-- tv-left -->
                 <div class="tv-left">
-                    <img src="../images/tv-left.jpg" alt="">
+                    <img class="lazy" data-original="../images/tv-left.jpg" alt="">
                 </div>
                 <!-- tv-right -->
                 <div class="tv-right">
@@ -728,7 +729,7 @@
                             </a>
                         </li> -->
                     </ul>
-                    <script src="../js/jquery.js"></script>
+                    <!-- <script src="../js/jquery.js"></script> -->
                     <!-- <script>
                         $(function() {
                                 $.ajax({
@@ -781,7 +782,7 @@
             <div class="cond-section">
                 <!-- cond-left -->
                 <div class="cond-left">
-                    <img src="../images/cond-max.jpg" alt="">
+                    <img class="lazy" data-original="../images/cond-max.jpg" alt="">
                 </div>
                 <!-- cond-right -->
                 <div class="cond-right">
@@ -843,7 +844,7 @@
             <div class="ice-section">
                 <!-- tv-left -->
                 <div class="ice-left">
-                    <img src="../images/ice-max.jpg" alt="">
+                    <img class="lazy" data-original="../images/ice-max.jpg" alt="">
                 </div>
                 <!-- tv-right -->
                 <div class="ice-right">
@@ -903,7 +904,7 @@
             <div class="wash-section">
                 <!-- wash-left -->
                 <div class="wash-left">
-                    <img src="../images/wash-max.jpg" alt="">
+                    <img class="lazy" data-original="../images/wash-max.jpg" alt="">
                 </div>
                 <!-- wash-right -->
                 <div class="wash-right">
@@ -965,7 +966,7 @@
             <div class="kitchen-section">
                 <!-- kitchen-left -->
                 <div class="kitchen-left">
-                    <img src="../images/kit-max.jpg" alt="">
+                    <img class="lazy" data-original="../images/kit-max.jpg" alt="">
                 </div>
                 <!-- kitchen-right -->
                 <div class="kitchen-right">
@@ -1026,7 +1027,7 @@
             <div class="parts-section">
                 <!-- parts-left -->
                 <div class="parts-left">
-                    <img src="../images/parts-max.jpg" alt="">
+                    <img class="lazy" data-original="../images/parts-max.jpg" alt="">
                 </div>
                 <!-- kitchen-right -->
                 <div class="parts-right">
@@ -1075,7 +1076,7 @@
         <div class="fans">
             <ul>
                 <li>
-                    <a href=""> <img style="font-size: 0;" src="../images/fans1.jpg" alt=""></a>
+                    <a href=""> <img style="font-size: 0;" class="lazy" data-original="../images/fans1.jpg" alt=""></a>
                     <div class="fant-box">
                         <div class="fant-title">
                             <span>新闻</span> 李东生：时势造就伟大企业
@@ -1086,7 +1087,7 @@
                     </div>
                 </li>
                 <li>
-                    <a href=""> <img style="font-size: 0;" src="../images/fant2.gif" alt=""></a>
+                    <a href=""> <img style="font-size: 0;" class="lazy" data-original="../images/fant2.gif" alt=""></a>
                     <div class="fant-box">
                         <div class="fant-title">
                             <span>资讯</span> 重新定义大屏交互体验
@@ -1097,7 +1098,7 @@
                     </div>
                 </li>
                 <li>
-                    <a href=""> <img style="font-size: 0;" src="../images/fant3.gif" alt=""></a>
+                    <a href=""> <img style="font-size: 0;" class="lazy" data-original="../images/fant3.gif" alt=""></a>
                     <div class="fant-box">
                         <div class="fant-title">
                             <span>资讯</span> 创新缔造未来！
@@ -1108,7 +1109,7 @@
                     </div>
                 </li>
                 <li>
-                    <a href=""> <img style="font-size: 0;" src="../images/fant4.gif" alt=""></a>
+                    <a href=""> <img style="font-size: 0;" class="lazy" data-original="../images/fant4.gif" alt=""></a>
                     <div class="fant-box">
                         <div class="fant-title">
                             <span>资讯</span> 大尺寸和8K是电视的必然趋势
@@ -1269,6 +1270,25 @@
             </a>
 
         </div>
+
+
+        <script src="../js/jsss.js"></script>
+
+        <script src="../js/jquery-1.11.0.min.js"></script>
+
+        <script src="../tuupola-jquery_lazyload/jquery.lazyload.js?v=1.9.1"></script>
+
+
+
+        <script type="text/javascript" charset="utf-8">
+            $(function() {
+
+                $("img.lazy").lazyload({
+                    effect: "fadeIn"
+                });
+
+            });
+        </script>
         <script>
             $(function() {
                 // if ($(window).offsetHeight() >= 4100) {
@@ -1356,9 +1376,6 @@
                 })
             })
         </script>
-
-        <script src="../js/jsss.js"></script>
-
 </body>
 
 </html

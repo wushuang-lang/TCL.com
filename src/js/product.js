@@ -14,10 +14,7 @@ define(['jquery', 'cookie'], function($, cookie) {
                 success: function(res) {
                     let pic = JSON.parse(res.pic);
                     let tempstr = `
-                        
-
-
-
+                
                         <div class="bg">
                         <div class="bg-panner">
                             <a href="">TCL官网 ></a>
@@ -71,8 +68,6 @@ define(['jquery', 'cookie'], function($, cookie) {
             
                                 </div>
                             </div> 
-            
-            
                         <div class="purc">
                                 <p>
                                     促销价：<span>
@@ -97,7 +92,7 @@ define(['jquery', 'cookie'], function($, cookie) {
                                 </div>
                             </div>
                             <div class="purc-text">
-                            <input type="number" value="1" min="1">
+                            <input type="number" value="1" min="1" class="number">
                             <input type="button" value="立即购买">
                             <input type="button" value="加入购物车" class="add" id="btn">
                         </div>
@@ -105,30 +100,53 @@ define(['jquery', 'cookie'], function($, cookie) {
                 服务：全国联保 | 7天退换货 | 积分抵扣 | 包邮(偏远地区除外)
             </div>
         </div>
+        <div class="details">
 
+            <ul>
+                <li><a href="">产品介绍</a></li>
+                <li><a href="">规格参数</a></li>
+                <li><a href="">服务政策</a></li>
+                <li><a href="">常见问题</a></li>
+                <li><a href="">评价（0）</a></li>
+            </ul>
+        </div>
+
+       
+        <div class="box">
+        <div class="box-panner">
+            <img src="..${pic[6].src}" alt="">
+            <img src="..${pic[7].src}" alt="">
+            <img src="..${pic[8].src}" alt="">
+            <img src="..${pic[9].src}" alt="">
+        </div>
+    </div>
 
                     `;
+
                     $('.maxbox').append(tempstr);
-                    callback && callback(res.id, res.price);
+                    callback && callback(res.id, res.num);
                 }
             })
         },
-        addItem: function(id, price, num) {
+        addItem: function(id, num, number) {
+            location.href = "shopcar.html";
+            console.log(id, num, number)
+
             let shop = cookie.get('shop'); // 获取cookie数据 判断是否存在
             // 如果有cookie  修改cookie
             // 如果有cookie  添加cookie
 
             let product = {
                 id: id,
-                price: price,
-                num: num
+                num: num,
+                number: number
             };
 
             if (shop) {
                 shop = JSON.parse(shop);
                 if (shop.some(elm => elm.id == id)) {
                     shop.forEach(elm => {
-                        elm.id == id ? elm.num = num : null;
+                        elm.id == id ? elm.number = number : null;
                     });
                 } else {
                     shop.push(product);
@@ -138,6 +156,9 @@ define(['jquery', 'cookie'], function($, cookie) {
                 shop.push(product); //将商品放入购物车
             }
             cookie.set('shop', JSON.stringify(shop), 1);
+
         }
+
     }
+
 });

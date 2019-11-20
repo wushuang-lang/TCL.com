@@ -12,4 +12,5 @@ require.config({
 
 require(['jquery', 'denlu'], function($, denlu) {
     denlu.denluEv();
+   
 })

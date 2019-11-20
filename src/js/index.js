@@ -3,6 +3,9 @@ let baseURL = "http://127.0.0.1:8080/TCL";
 define(['jquery'], function($) {
     return {
         render: function() {
+
+
+
             $.ajax({
                 type: "get",
                 // url: "../lib/main.php",
@@ -13,10 +16,10 @@ define(['jquery'], function($) {
                     data.forEach((elem, i) => {
                         let pic = JSON.parse(elem.pic);
                         temp += ` <li class="item">
-                             <img class="hot-img" src="..${pic[0].src}" alt="">
+                             <img class="hot-img lazy"  data-original="..${pic[0].src}" alt="">
                              <a href="http://127.0.0.1:8080/TCL/src/html/product.html?id=${elem.id}">
                          <div class="p-pic">
-                            <img src="..${pic[1].src}" alt="">
+                            <img class="lazy" data-original="..${pic[1].src}" alt="">
                          </div>
                         <div class="p-title">
                             ${elem.title}
@@ -31,6 +34,7 @@ define(['jquery'], function($) {
         </li> `;
                     });
                     $('.tv-right>.list').append(temp)
+                    $("img.lazy").lazyload({ effect: "fadeIn" });
                 }
             });
         },
@@ -45,10 +49,10 @@ define(['jquery'], function($) {
                     data.forEach((elem, i) => {
                         let pic = JSON.parse(elem.pic);
                         temp += ` <li class="item">
-                                 <img class="hot-img" src="..${pic[0].src}" alt="">
+                                 <img class="hot-img lazy"  data-original="..${pic[0].src}" alt="">
                                  <a href="http://127.0.0.1:8080/TCL/src/html/product.html?id=${elem.id}">
                              <div class="p-pic">
-                                <img src="..${pic[1].src}" alt="">
+                                <img class="lazy"  data-original="..${pic[1].src}" alt="">
                              </div>
                             <div class="p-title">
                                 ${elem.title}
@@ -63,7 +67,8 @@ define(['jquery'], function($) {
             </li>
                             `;
                     });
-                    $('.listt').append(temp)
+                    $('.listt').append(temp);
+                    $("img.lazy").lazyload({ effect: "fadeIn" });
                 }
             });
         },
@@ -78,10 +83,10 @@ define(['jquery'], function($) {
                     data.forEach((elem, i) => {
                         let pic = JSON.parse(elem.pic);
                         temp += ` <li class="item">
-                             <img class="hot-img" src="..${pic[0].src}" alt="">
+                             <img class="hot-img lazy" data-original="..${pic[0].src}" alt="">
                              <a href="http://127.0.0.1:8080/TCL/src/html/product.html?id=${elem.id}">
                          <div class="p-pic">
-                            <img src="..${pic[1].src}" alt="">
+                            <img class="lazy" data-original="..${pic[1].src}" alt="">
                          </div>
                         <div class="p-title">
                             ${elem.title}
@@ -96,7 +101,8 @@ define(['jquery'], function($) {
         </li>
                         `;
                     });
-                    $('.listl').append(temp)
+                    $('.listl').append(temp);
+                    $("img.lazy").lazyload({ effect: "fadeIn" });
                 }
             });
         },
@@ -111,10 +117,10 @@ define(['jquery'], function($) {
                     data.forEach((elem, i) => {
                         let pic = JSON.parse(elem.pic);
                         temp += ` <li class="item">
-                     <img class="hot-img" src="..${pic[0].src}" alt="">
+                     <img class="hot-img lazy" data-original="..${pic[0].src}" alt="">
                      <a href="http://127.0.0.1:8080/TCL/src/html/product.html?id=${elem.id}">
                  <div class="p-pic">
-                    <img src="..${pic[1].src}" alt="">
+                    <img class="lazy" data-original="..${pic[1].src}" alt="">
                  </div>
                 <div class="p-title">
                     ${elem.title}
@@ -129,7 +135,8 @@ define(['jquery'], function($) {
 </li>
                 `;
                     });
-                    $('.lis').append(temp)
+                    $('.lis').append(temp);
+                    $("img.lazy").lazyload({ effect: "fadeIn" });
                 }
             });
         },
@@ -143,10 +150,10 @@ define(['jquery'], function($) {
                     data.forEach((elem, i) => {
                         let pic = JSON.parse(elem.pic);
                         temp += ` <li class="item">
-                     <img class="hot-img" src="..${pic[0].src}" alt="">
+                     <img class="hot-img lazy" data-original="..${pic[0].src}" alt="">
                      <a href="http://127.0.0.1:8080/TCL/src/html/product.html?id=${elem.id}">
                  <div class="p-pic">
-                    <img src="..${pic[1].src}" alt="">
+                    <img class="lazy" data-original="..${pic[1].src}" alt="">
                  </div>
                 <div class="p-title">
                     ${elem.title}
@@ -161,7 +168,8 @@ define(['jquery'], function($) {
 </li>
                 `;
                     });
-                    $('.liso').append(temp)
+                    $('.liso').append(temp);
+                    $("img.lazy").lazyload({ effect: "fadeIn" });
                 }
             });
         },
@@ -175,10 +183,10 @@ define(['jquery'], function($) {
                     data.forEach((elem, i) => {
                         let pic = JSON.parse(elem.pic);
                         temp += ` <li class="item">
-             <img class="hot-img" src="..${pic[0].src}" alt="">
+             <img class="hot-img lazy" data-original="..${pic[0].src}" alt="">
              <a href="http://127.0.0.1:8080/TCL/src/html/product.html?id=${elem.id}">
          <div class="p-pic">
-            <img src="..${pic[1].src}" alt="">
+            <img class="lazy" data-original="..${pic[1].src}" alt="">
          </div>
         <div class="p-title">
             ${elem.title}
@@ -193,7 +201,8 @@ define(['jquery'], function($) {
 </li>
         `;
                     });
-                    $('.lisaa').append(temp)
+                    $('.lisaa').append(temp);
+                    $("img.lazy").lazyload({ effect: "fadeIn" });
                 }
             });
         }
