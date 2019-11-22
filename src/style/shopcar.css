@@ -3,10 +3,6 @@
   padding: 0;
 }
 
-body {
-  background-color: #fff !important;
-}
-
 .header {
   width: 100%;
   height: 40px;
@@ -565,6 +561,7 @@ body {
 .section {
   width: 100%;
   height: auto;
+  background: #fff;
 }
 
 .section > .section-panner {
@@ -755,8 +752,9 @@ body {
 
 .payment {
   width: 100%;
-  margin-bottom: 162px;
-  margin: 30px 0 162px;
+  background: #fff;
+  padding-bottom: 162px;
+  padding: 30px 0 162px;
   position: relative;
 }
 
@@ -788,7 +786,7 @@ body {
 }
 
 .payment .price-box .m_sp {
-  margin-left: 440px;
+  margin-left: 340px;
   margin-right: 42px;
   line-height: 50px;
 }

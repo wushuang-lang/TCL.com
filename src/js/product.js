@@ -130,7 +130,7 @@ define(['jquery', 'cookie'], function($, cookie) {
         },
         addItem: function(id, num, number) {
             location.href = "shopcar.html";
-            console.log(id, num, number)
+            // console.log(id, num, number)
 
             let shop = cookie.get('shop'); // 获取cookie数据 判断是否存在
             // 如果有cookie  修改cookie

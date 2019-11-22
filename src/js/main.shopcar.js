@@ -9,7 +9,9 @@ require.config({
 
 require(['jquery', 'shop'], function($, shop) {
     shop.render();
+    shop.mop();
     shop.rend();
-    shop.bing()
+    shop.bing();
+    shop.jixu();
 
 });
