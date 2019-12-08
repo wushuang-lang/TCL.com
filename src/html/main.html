@@ -1306,7 +1306,6 @@
                     $('html,body').animate({
                         scrollTop: top
                     }, 600)
-
                 });
                 $('.gotop>.gotop-t').on('click', function() {
                     $('html,body').animate({
@@ -1318,7 +1317,6 @@
                     var i = 0;
                     if (top >= 4820) {
                         i = 6;
-
                         $('.float-nav').each(function(i, elm) {
                             elm.style = 'display:none'
                         })
@@ -1347,30 +1345,18 @@
                         $('.float-nav').each(function(i, elm) {
                             elm.style = 'display:block'
                         })
-
                     } else if (top >= 700) {
 
                         $('.float-nav').each(function(i, elm) {
                             elm.style = 'display:block'
                         })
-
                     } else if (top <= 700) {
 
                         $('.float-nav').each(function(i, elm) {
                             elm.style = 'display:none'
                         })
-
                     }
-                    //  else if (top >= 5500) {
-                    //     i = 7;
-                    //     $('.float-nav').each(function(i, elm) {
-                    //         elm.style = 'display:none';
-                    //     });
-                    // };
 
-                    // $('.float-nav').each(function(i, elm) {
-                    //         elm.style = 'display:none'
-                    //     })
                     $('.float-nav>ul>li>a').removeClass('active');
                     $('.float-nav>ul>li>a:eq(' + i + ')').addClass('active')
                 })

@@ -162,15 +162,16 @@ define(['jquery', 'cookie'], function($, cookie) {
 
 
                 $('.section').on('click', '#more', function() {
-
+                    var count = 1;
                     $('.nei').each(function(i, elm) {
+                        // parseFloat(this.value += 1;
+                        console.log(elm)
 
-                        console.log(parseFloat(this.value += 1))
-
-
-
-
+                        // console.log(parseFloat(this.value) += 1)
+                        count += Number(this.value);
+                        $(elm).html(count)
                     })
+
 
 
                 })

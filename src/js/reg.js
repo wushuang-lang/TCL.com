@@ -23,9 +23,9 @@ define(['jquery', 'md5'], function($, md5) {
                             }, 1000)
                         } else if (JSON.parse(res).msg == '用户名已存在') {
 
-                            setTimeout(function() {
-                                location.reload();
-                            }, 1000)
+                            // setTimeout(function() {
+                            // location.reload();
+                            // }, 1000)
                         }
                     }
                 });
